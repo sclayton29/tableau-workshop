@@ -13,7 +13,7 @@ University of Oklahoma Libraries
   * [Selecting the Visualization Type](#selecting-the-visualization-type)
   * [Styling the Visualization](#styling-the-visualization)
 * [Creating a Line Graph](#creating-a-line-graph)
-  * [Analytics with Tableau](#analytics-with-Tableau)
+  * [Analytics with Tableau](#analytics-with-tableau)
 * [Creating a Bar Chart](#creating-a-bar-chart)
 * [Creating an Interactive Dashboard](#creating-an-interactive-dashboard)
 * [Sharing your Visualizations](#sharing-your-visualizations)
@@ -65,7 +65,7 @@ We will create a map that shows the violent crime rates by state through the yea
 6. Click the Show Me Tab again to hide the different visualization options. 
 7. Tableau will automatically generate a color scheme for the map and add a legend to the right side of the map. We can change the colors to something more approriate. Click the arrow next to AVG(Violent Crime Rate) on the legend and select Edit Colors. 
 8. Click the Down Arrow next palette to select a different color scheme. In our example, we will choose Red-Green Diveraging. We want green to indicate less crime so we will select the Reserve Checkbox. Click Apply to see your changes on the map. Click OK to exit the color selection window. ![Fig_07: Chaning the colors](images/fig_07.png)
- ### Styling the Visualization 
+### Styling the Visualization 
 9. That worked but now it looks like all of our states are shades of green. However, if you zoom into Washington, DC, you should see a red speck.(Hint: double click to zoom in and hold shift to drag the map around). Hovering over DC will show a violent crime rate over 1,600. The next closest is Florida with 729. If we examine the data closely, we notice that outside DC the highest crime for any one year caps off at about 1,200. Let's cap our range at 1,200. We could include a note about this in our final product. Open the Edit Colors window again. Click Advanced to reveal additoinal options. Click the checkboxes next to Start and End. Now, we can enter 0 for the start and 1,200 for the end. I'm going to leave the Center at the default right in between the start and end. You can check Stepped Colors if you want clearer categories. Click OK to apply your changes and exit. ![Fig_08: Setting fixed start and end](images/fig_08.png)
 10. We can update our Legend title from AVG(Violent Crime Rate) to something more human readable and descriptive. Click the down arrow next to AVG(Violent Crime Rate). Select Edit Title. Type in your new title. In our example, we will use Violent Crimes per 100,000 people. Click OK to save your changes. 
 11. We further style of map by using the Marks box on the left side of the screen. 
