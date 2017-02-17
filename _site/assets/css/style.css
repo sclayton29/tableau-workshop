@@ -324,3 +324,5 @@ a:hover { text-decoration: underline; }
 .main-content h2 { color: #841617; }
 
 .main-content h3 { color: #841617; }
+
+img { display: block; margin: auto; }
