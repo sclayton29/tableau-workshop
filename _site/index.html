@@ -1,62 +1,152 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="tableau-workshop : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=1c88144cc96b1baa00ca62143c51d57a05c3a5fb">
-
-    <title>tableau-workshop</title>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=68e093831acaa429ebb4a26cb3633796ed145fb5">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">tableau-workshop</h1>
+      <h2 class="project-tagline"></h2>
+      
+        <a href="http://github.com/sclayton29/tableau-workshop" class="btn">View on GitHub</a>
+      
+      
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="http://github.com/sclayton29/tableau-workshop">View on GitHub</a>
+    <section class="main-content">
+      <h1 id="tableau-workshop">Tableau Workshop</h1>
+<p>Last Updated Feburary 2017<br />
+Created by Sarah Clayton, Carolyn Mead-Harvey, and Paul Vieth<br />
+University of Oklahoma Libraries</p>
 
-          <h1 id="project_title">tableau-workshop</h1>
-          <h2 id="project_tagline"></h2>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#getting-the-data">Getting the Data</a></li>
+  <li><a href="#loading-data-into-tableau">Loading Data into Tableau</a></li>
+  <li><a href="#creating-a-map">Creating a Map</a>
+    <ul>
+      <li><a href="#selecting-the-data">Selecting the Data</a></li>
+      <li><a href="#selecting-the-visualization-type">Selecting the Visualization Type</a></li>
+      <li><a href="#styling-the-visualization">Styling the Visualization</a></li>
+    </ul>
+  </li>
+  <li><a href="#creating-a-line-graph">Creating a Line Graph</a></li>
+  <li><a href="#creating-a-bar-chart">Creating a Bar Chart</a></li>
+  <li><a href="#creating-an-interactive-dashboard">Creating an Interactive Dashboard</a></li>
+  <li><a href="#sharing-your-visualizations">Sharing your Visualizations</a></li>
+</ul>
 
-          
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1 id="tableau-workshop">Tableau Workshop</h1>
-<h3 id="updated-feburary-2017">Updated Feburary 2017</h3>
+<h2 id="introduction">Introduction</h2>
 <p>This lesson will take you through creating a data visualization with Tableau.</p>
 
-<p>Tableau is a drag and drop tool that allows users to create visualizations without any programming. Tableau Public is available for anyone for free, but you have to save your visualizations to the Tableau server. If you have data you cannot or do not want to make public, <a href="https://www.tableau.com/academic">academic trials of the full software are available</a>.</p>
+<p>Tableau is a drag and drop tool that allows users to create interactive visualizations without any programming. This can be a good way to explore or present your data.</p>
+
+<p>Tableau Public is available for anyone for free, but you have to save your visualizations to the Tableau server. If you have data you cannot or do not want to make public, <a href="https://www.tableau.com/academic">academic trials of the full software are available</a>.</p>
+
+<p>If you follow along with this material, by the end of the workshop you will have a visualization that looks similar to the one below.</p>
+
+<iframe width="100%" height="1500" src="https://public.tableau.com/views/CrimeData_11/ViolentCrimeintheUS?:embed=y&amp;:display_count=yes&amp;:showVizHome=no" frameborder="0" marginheight="-50"></iframe>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
 
 <h2 id="getting-the-data">Getting the Data</h2>
-<p>We are going to be mapping Crime Data in the US from 1960 to 2014. This data comes from the FBI’s Uniform Crime Reporting Statistics. The table was created using the <a href="https://www.ucrdatatool.gov/">UCR Data Tool</a> using the State by state and national estimates options. Like most real world data this data is not perfect.</p>
-
-<p><a href="/data/data-notes.html">View the notes on this data set</a></p>
+<p>We are going to be mapping Crime Data in the US from 1960 to 2014. This data comes from the FBI’s Uniform Crime Reporting Statistics. The table was created using the <a href="https://www.ucrdatatool.gov/">UCR Data Tool</a> using the State by state and national estimates options. Like most real world data this data is not perfect.<a href="/data/data-notes.html">View the notes on this data set</a></p>
 
 <p>We also performed minor clean up for this data to be more easily useable.</p>
 
-<p><a href="/data/CrimeStatebyState.zip?raw=true">Download the cleaned data</a></p>
+<ol>
+  <li><a href="/data/CrimeStatebyState.zip?raw=true">Download the cleaned data</a></li>
+  <li>Unzip the data.</li>
+  <li>Move the file to your desktop or another location where you can easily locate it.</li>
+  <li>Look over the spreadsheet to gain a better understanding of what you will be visualizing.</li>
+</ol>
 
-      </section>
-    </div>
+<p><a href="#tableau-workshop">Return to Top</a></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
+<h2 id="loading-data-into-tableau">Loading Data into Tableau</h2>
+<p>Now, we can load our data into Tableau.</p>
+<ol>
+  <li>Open your Tableau application.</li>
+  <li>Under connect, select Text File. * Note: Tableau classifies CSV files as text files not Excel. <img src="images/fig_01.png" alt="Fig_01: Connecting to a File" /></li>
+  <li>Navigate to and open your file in the explorer or finder window that appears.</li>
+  <li>You should now see your table displayed in tableau. <img src="images/fig_02.png" alt="Fig_02: Data in Tableau Explorer" /></li>
+  <li>Click the Orange Sheet 1 tab at the bottom left of the screen. There may be a bit of a delay while Tableau loads your data. With this dataset, this step shouldn’t take longer than a few moments.</li>
+</ol>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+<h2 id="creating-a-map">Creating a Map</h2>
+<p>We will create a map that shows the violent crime rates by state through the years as our first visualization.</p>
+<ol>
+  <li>Before we create anything, let’s rename Sheet 1 to a more approriate name. Right click on Sheet 1 and select Rename Sheet. Then, type in whatever name you would like. For this example, we will use Map. Press enter to save the new name. <img src="images/fig_03.png" alt="Fig_03: Renaming your sheet" />
+    <h3 id="selecting-the-data">Selecting the data</h3>
+  </li>
+  <li>Tableau has broken down our spreadsheet to be useable by the software. On the left side of the screen, you should see a list of the columns from the original spreadsheet. These are broken into Dimensions and Measures. Tableau has automatically broken down your data into these two roles (You can change this manually by right clicking an item). Next to each column name, there is an icon indicating the data type. The globe icon indicates that it is geographic data, the # indiciates that it numberic data, and Abc indicates that it is textual data.</li>
+  <li>Drag the State Dimension to columns and the Violent Crime rate measure to Rows. Tableau will automatically create a bar graph. <img src="images/fig_04.png" alt="Fig_04: Dragging data" /> * Note: the Crime Rate is crimes per 100,000 people.</li>
+  <li>When you dragged violent crime rate to Rows. Tableau changed it to the SUM of the Violent Crime Rate. Let’s change that to the average. Click SUM(Violent Crime rate). Hover over Measure (Sum) and select Average.<img src="images/fig_05.png" alt="Fig_05: Changing SUM to AVG" />
+    <h3 id="selecting-the-visualization-type">Selecting the Visualization Type</h3>
+  </li>
+  <li>The bar chart is interesting, but we wanted to see the data as a map. Click the Show Me icon in the top right of the application. Select the filled map option (2nd row in the middle). Now, you should see a map. <img src="images/fig_06.png" alt="Fig_06: Changing Viz Type" /> *Notice that Tableau has moved State and AVG(Violent Crime rate) under Marks on the left side of the screen and added Longitude and Latitude to your rows and columns.</li>
+  <li>Click the Show Me Tab again to hide the different visualization options.</li>
+  <li>Tableau will automatically generate a color scheme for the map and add a legend to the right side of the map. We can change the colors to something more approriate. Click the arrow next to AVG(Violent Crime Rate) on the legend and select Edit Colors.</li>
+  <li>Click the Down Arrow next palette to select a different color scheme. In our example, we will choose Red-Green Diveraging. We want green to indicate less crime so we will select the Reserve Checkbox. Click Apply to see your changes on the map. Click OK to exit the color selection window. <img src="images/fig_07.png" alt="Fig_07: Chaning the colors" />
+ ### Styling the Visualization</li>
+  <li>That worked but now it looks like all of our states are shades of green. However, if you zoom into Washington, DC, you should see a red speck.(Hint: double click to zoom in and hold shift to drag the map around). Hovering over DC will show a violent crime rate over 1,600. The next closest is Florida with 729. If we examine the data closely, we notice that outside DC the highest crime for any one year caps off at about 1,200. Let’s cap our range at 1,200. We could include a note about this in our final product. Open the Edit Colors window again. Click Advanced to reveal additoinal options. Click the checkboxes next to Start and End. Now, we can enter 0 for the start and 1,200 for the end. I’m going to leave the Center at the default right in between the start and end. You can check Stepped Colors if you want clearer categories. Click OK to apply your changes and exit. <img src="images/fig_08.png" alt="Fig_08: Setting fixed start and end" /></li>
+  <li>We can update our Legend title from AVG(Violent Crime Rate) to something more human readable and descriptive. Click the down arrow next to AVG(Violent Crime Rate). Select Edit Title. Type in your new title. In our example, we will use Violent Crimes per 100,000 people. Click OK to save your changes.</li>
+  <li>We further style of map by using the Marks box on the left side of the screen.</li>
+  <li>You may have noticed that when you hover over a state on the map a pop-up appears with the name of the state and the actual number for the average violent crime rate. This is called the Tootip. <img src="images/fig_09.png" alt="Fig_09: ToolTip Box" /></li>
+  <li>We can add additional element by dragging measures to the tooltip box under Marks. Drag the Violent Crime total on top of the Tooltip box. Now, SUM(Violent Crime Total) should appear below AVG(Violent Crimes Rates) with a the tooltip icon beside it.</li>
+  <li>Tableau will automatically pull the column title as the label in the Tooltip. You can customize this by clicking the Tooltip Box. A text box will appear to let you edit the display. In this example, I will just add that the rate is per 100,000 people. Click OK when you are satisified. <img src="images/fig_10.png" alt="Fig_10: Changing the ToolTip" /></li>
+  <li>We can also add labels to our map. Click the Label box under Marks. Click the Show Mark Labels Check box. You can choose to allow labels to overlap if you want parts of labels visable in more compact states. <img src="images/fig_11.png" alt="Fig_11: Adding Labels" /></li>
+</ol>
+
+<h3 id="adding-filters">Adding Filters</h3>
+<ol>
+  <li>We can apply filters to let people interact with our data. Let’s create one for years. Drag the Year dimension to the Filters box(above Marks). Leave the defaults and click OK. <img src="images/fig_12.png" alt="Fig_12: Adding Year as a Filter" /></li>
+  <li>Click Year and Show Filter to expose the filter for visitors to manipulate.</li>
+  <li>There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. <img src="images/fig_13.png" alt="Year filter continous options" /></li>
+  <li>We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. <img src="images/fig_14.png" alt="Change to Discrete" />. In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it.</li>
+  <li>Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. <img src="images/fig_15.png" alt="Discrete Filter Styles" /></li>
+</ol>
+
+<p>Now, we have a nice map that will allow others to view and interact with our data. Let’s create some other visualizations.</p>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+<h2 id="creating-a-line-graph">Creating a Line Graph</h2>
+<ol>
+  <li></li>
+</ol>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+<h2 id="creating-a-bar-chart">Creating a Bar Chart</h2>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+<h2 id="creating-an-interactive-dashboard">Creating an Interactive Dashboard</h2>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+<h2 id="sharing-your-visualizations">Sharing Your Visualizations</h2>
+
+<p><a href="#tableau-workshop">Return to Top</a></p>
+
+
+      <footer class="site-footer">
         
-        <p class="copyright">tableau-workshop maintained by <a href="http://github.com/sclayton29">sclayton29</a></p>
+          <span class="site-footer-owner"><a href="http://github.com/sclayton29/tableau-workshop">tableau-workshop</a> is maintained by <a href="http://github.com/sclayton29">sclayton29</a>.</span>
         
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
-    </div>
+    </section>
 
-
-
+    
   </body>
 </html>
