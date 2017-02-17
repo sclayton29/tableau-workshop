@@ -1,4 +1,4 @@
-# Tableau Workshop
+# About
 Last Updated Feburary 2017  
 Created by Sarah Clayton, Carolyn Mead-Harvey, and Paul Vieth  
 University of Oklahoma Libraries
@@ -27,7 +27,7 @@ Tableau Public is available for anyone for free, but you have to save your visua
 If you follow along with this material, by the end of the workshop you will have a visualization that looks similar to the one below. 
 {% include tableau-viz.html %} 
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 
 ## Getting the Data
@@ -40,7 +40,7 @@ We also performed minor clean up for this data to be more easily useable.
 3. Move the file to your desktop or another location where you can easily locate it.
 4. Look over the spreadsheet to gain a better understanding of what you will be visualizing.
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 ## Loading Data into Tableau
 Now, we can load our data into Tableau.
@@ -50,7 +50,7 @@ Now, we can load our data into Tableau.
 4. You should now see your table displayed in tableau. ![Fig_02: Data in Tableau Explorer](images/fig_02.png)
 5. Click the Orange Sheet 1 tab at the bottom left of the screen. There may be a bit of a delay while Tableau loads your data. With this dataset, this step shouldn't take longer than a few moments.
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 ## Creating a Map
 We will create a map that shows the violent crime rates by state through the years as our first visualization. 
@@ -82,23 +82,23 @@ We will create a map that shows the violent crime rates by state through the yea
 
 Now, we have a nice map that will allow others to view and interact with our data. Let's create some other visualizations. 
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 
 ## Creating a Line Graph
 1. 
 
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 ## Creating a Bar Chart
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 ## Creating an Interactive Dashboard
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
 
 ## Sharing Your Visualizations
 
-[Return to Top](#tableau-workshop)
+[Return to Top](#about)
