@@ -13,6 +13,7 @@ University of Oklahoma Libraries
   * [Selecting the Visualization Type](#selecting-the-visualization-type)
   * [Styling the Visualization](#styling-the-visualization)
 * [Creating a Line Graph](#creating-a-line-graph)
+  * [Analytics with Tableau](#analytics-with-Tableau)
 * [Creating a Bar Chart](#creating-a-bar-chart)
 * [Creating an Interactive Dashboard](#creating-an-interactive-dashboard)
 * [Sharing your Visualizations](#sharing-your-visualizations)
@@ -86,16 +87,28 @@ Now, we have a nice map that will allow others to view and interact with our dat
 
 
 ## Creating a Line Graph
-1. 
-
+In the next steps, we will create a line graph to show violent crime rates through the years. 
+1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![New Worksheet Creation](images/fig_16.png)
+2. Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year. 
+3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Year and Violent Crimes in columns/rows](images/fig_17.png)
+4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average. 
+### Analytics With Tableau
+5. 
 
 [Return to Top](#about)
 
 ## Creating a Bar Chart
+1. Add a new sheet and name it Violent Crime Breakdown. 
+2. The FBI classifies aggreviated assult, murder, rape, and robbery as violent crimes. In this section, we will create a bar chart with the break down of these cateogories of crimes.  
+3. Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. ![Categories in Row](images/fig_18.png)
+4. Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. ![Measure Values Box](images/fig_19.png)
+5. For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. ![Swamp rows and columns button](images/fig_20.png)
 
 [Return to Top](#about)
 
 ## Creating an Interactive Dashboard
+Now we can create a dashboard to view all of our visualizations at once. 
+1. Click the New Dashboard button at the bottom of the screen. 
 
 [Return to Top](#about)
 
