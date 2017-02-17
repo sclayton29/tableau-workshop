@@ -91,7 +91,8 @@ In the next steps, we will create a line graph to show violent crime rates throu
 1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![New Worksheet Creation](images/fig_16.png)
 2. Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year. 
 3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Year and Violent Crimes in columns/rows](images/fig_17.png)
-4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average. 
+4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
+ 
 ### Analytics With Tableau
 5. 
 
