@@ -1,4 +1,4 @@
-# About
+## About
 Last Updated Feburary 2017  
 Created by Sarah Clayton, Carolyn Mead-Harvey, and Paul Vieth  
 University of Oklahoma Libraries

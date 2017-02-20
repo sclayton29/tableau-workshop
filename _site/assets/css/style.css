@@ -317,7 +317,7 @@ a:hover { text-decoration: underline; }
 
 .site-footer-credits { color: #819198; }
 
-.page-header { background-image: linear-gradient(360deg, #841617, #660000); }
+.page-header { background-image: linear-gradient(360deg, #841617, #660000); padding-top: 10px; padding-bottom: 10px; }
 
 .main-content h1 { color: #841617; }
 
@@ -326,3 +326,5 @@ a:hover { text-decoration: underline; }
 .main-content h3 { color: #841617; }
 
 img { display: block; margin: auto; }
+
+.level { font-weight: normal; opacity: .7; font-size: 1.15rem; }
