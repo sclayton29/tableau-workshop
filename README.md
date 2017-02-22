@@ -89,11 +89,15 @@ Now, we have a nice map that will allow others to view and interact with our dat
 ## Creating a Line Graph
 In the next steps, we will create a line graph to show violent crime rates through the years. 
 1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![New Worksheet Creation](images/fig_16.png)
-2. Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year. 
+2. Rename the worksheet something meaningful. We will call our sheet *Violent Crimes by Year*. 
 3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Year and Violent Crimes in columns/rows](images/fig_17.png)
-4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
+4. Notice the rows defaults to SUM(Violent Crime Rates). To change this to an average click on SUM(Violent Crime Rates), hover over Measure and select Average.
 ### Analytics With Tableau
-5. 
+Tableau allows you to perform basic statistical analysis. Let's add a trend line to this graph. 
+5. Right click on the view and select Trend Lines > Show Trend Lines. You will now see a trend line representing a linear regression model based on our data.  
+6. To view the trend line model and information about its significance, right click on the view and select Trend Lines > Describe Trend Model. This menu shows the model's formula, p-value, ANOVA table, and R-Squared value.
+7. Right click on the view and select Trend Lines > Trend Lines Options. The Trend Line Options menu gives options for changing the model type, including or excluding factors, and adding confidence bands. 
+
 
 [Return to Top](#about)
 
