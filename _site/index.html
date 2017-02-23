@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=6ac544bdd0571d22b0567e3339eadc5e3c0c664d">
+    <link rel="stylesheet" href="/assets/css/style.css?v=52358876d069b01acf8d592500a993e21c2263c1">
   </head>
   <body>
     <section class="page-header">
@@ -40,7 +40,14 @@ University of Oklahoma Libraries</p>
     </ul>
   </li>
   <li><a href="#creating-a-bar-chart">Creating a Bar Chart</a></li>
-  <li><a href="#creating-an-interactive-dashboard">Creating an Interactive Dashboard</a></li>
+  <li><a href="#creating-an-interactive-dashboard">Creating an Interactive Dashboard</a>
+    <ul>
+      <li><a href="#adding-worksheets">Adding Worksheets</a></li>
+      <li><a href="#styling-the-dashboard">Styling the Dashboard</a></li>
+      <li><a href="#filtering-by-the-map">Filtering by the Map</a></li>
+      <li><a href="#adding-other-information">Adding Other information</a></li>
+    </ul>
+  </li>
   <li><a href="#sharing-your-visualizations">Sharing your Visualizations</a></li>
 </ul>
 
@@ -113,9 +120,9 @@ University of Oklahoma Libraries</p>
 <ol>
   <li>We can apply filters to let people interact with our data. Let’s create one for years. Drag the Year dimension to the Filters box(above Marks). Leave the defaults and click OK. <img src="images/fig_12.png" alt="Fig_12: Adding Year as a Filter" /></li>
   <li>Click Year and Show Filter to expose the filter for visitors to manipulate.</li>
-  <li>There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. <img src="images/fig_13.png" alt="Year filter continous options" /></li>
-  <li>We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. <img src="images/fig_14.png" alt="Change to Discrete" />. In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it.</li>
-  <li>Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. <img src="images/fig_15.png" alt="Discrete Filter Styles" /></li>
+  <li>There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. <img src="images/fig_13.png" alt="Fig_13: Year filter continous options" /></li>
+  <li>We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. <img src="images/fig_14.png" alt="Fig_14: Change to Discrete" />. In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it.</li>
+  <li>Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. <img src="images/fig_15.png" alt="Fig_15: Discrete Filter Styles" /></li>
 </ol>
 
 <p>Now, we have a nice map that will allow others to view and interact with our data. Let’s create some other visualizations.</p>
@@ -125,9 +132,9 @@ University of Oklahoma Libraries</p>
 <h2 id="creating-a-line-graph">Creating a Line Graph</h2>
 <p>In the next steps, we will create a line graph to show violent crime rates through the years.</p>
 <ol>
-  <li>Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. <img src="images/fig_16.png" alt="New Worksheet Creation" /></li>
+  <li>Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. <img src="images/fig_16.png" alt="Fig_16: New Worksheet Creation" /></li>
   <li>Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year.</li>
-  <li>This time we will drag Year to Columns and Violent Crime Rate to Rows. <img src="images/fig_17.png" alt="Year and Violent Crimes in columns/rows" /></li>
+  <li>This time we will drag Year to Columns and Violent Crime Rate to Rows. <img src="images/fig_17.png" alt="Fig_17: Year and Violent Crimes in columns/rows" /></li>
   <li>Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
     <h3 id="analytics-with-tableau">Analytics With Tableau</h3>
   </li>
@@ -140,9 +147,9 @@ University of Oklahoma Libraries</p>
 <ol>
   <li>Add a new sheet and name it Violent Crime Breakdown.</li>
   <li>The FBI classifies aggreviated assult, murder, rape, and robbery as violent crimes. In this section, we will create a bar chart with the break down of these cateogories of crimes.</li>
-  <li>Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. <img src="images/fig_18.png" alt="Categories in Row" /></li>
-  <li>Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. <img src="images/fig_19.png" alt="Measure Values Box" /></li>
-  <li>For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. <img src="images/fig_20.png" alt="Swamp rows and columns button" /></li>
+  <li>Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. <img src="images/fig_18.png" alt="Fig_18: Categories in Row" /></li>
+  <li>Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. <img src="images/fig_19.png" alt="Fig_19: Measure Values Box" /></li>
+  <li>For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. <img src="images/fig_20.png" alt="Fig_20: Swamp rows and columns button" /></li>
 </ol>
 
 <p><a href="#about">Return to Top</a></p>
@@ -150,7 +157,23 @@ University of Oklahoma Libraries</p>
 <h2 id="creating-an-interactive-dashboard">Creating an Interactive Dashboard</h2>
 <p>Now we can create a dashboard to view all of our visualizations at once.</p>
 <ol>
-  <li>Click the New Dashboard button at the bottom of the screen.</li>
+  <li>Click the New Dashboard button at the bottom of the screen. It is to the right of the new worksheet button. <img src="images/fig_21.png" alt="Fig_21: New dashboard button" /></li>
+  <li>Rename you dashboard, Violent Crimes in the USA.
+    <h3 id="adding-worksheets">Adding Worksheets</h3>
+  </li>
+  <li>In your new Dashboard, you should see Size and Sheets in the left column. <img src="images/fig_22.png" alt="Fig_22: Size and Sheets" />Under size, you can change the size of your dashboard to optimize it to different displays. You have the option to use a range, fixed size, or have your visualization change automatically based on your display. For this example, we will choose automatic. Click the down arrow beside the size option and click Automatic.</li>
+  <li>To add worksheets to the dashboard, you need to drag the sheet name to the center of the screen, where you see the text, “Drop sheets here.”</li>
+  <li>Start by dragging the map. It will be default, take up the entire workspace and add the legend and filter to the right.</li>
+  <li>Now, drag Violent Crimes by Year to the Map. When you drag the sheet, you will notice that different parts of the screen become highlighted. This is showing you where the sheet will be placed. Drop the chart so it will take up the bottom half of the screen. Don’t worrry about the style yet. We will fix that at the end. <img src="images/fig_23.png" alt="Fig_23: Adding Line Chart to Dashboard" /></li>
+  <li>Let’s add the final visualization to the map. Drag Violent Crime Breakdown so it appears in the bottom right corner of the dashboard. <img src="images/fig_24.png" alt="Fig_24: Adding Bar Graph to Dashboard" />
+    <h3 id="styling-the-dashboard">Styling the Dashboard</h3>
+  </li>
+  <li>Now that the data is add, we can make our dashboard more user-friendly by adding some styling. The map sheet needs more screen real estate than the other visualizations. Hoover over the bottom of the map sheet until you see a black arrow. Then, drag the map down until it is the size you want.</li>
+  <li>We can do a similar process to give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position.</li>
+  <li>We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. <img src="images/fig_25.png" alt="Fig_25: Adding the Title" /> You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append “from 1960 to 2014” to the end of the title and center it. Click OK to apply the changes.
+    <h3 id="filtering-by-the-map">Filtering by the Map</h3>
+    <h3 id="adding-other-information">Adding Other information</h3>
+  </li>
 </ol>
 
 <p><a href="#about">Return to Top</a></p>

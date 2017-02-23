@@ -16,6 +16,10 @@ University of Oklahoma Libraries
   * [Analytics with Tableau](#analytics-with-tableau)
 * [Creating a Bar Chart](#creating-a-bar-chart)
 * [Creating an Interactive Dashboard](#creating-an-interactive-dashboard)
+  * [Adding Worksheets](#adding-worksheets)
+  * [Styling the Dashboard](#styling-the-dashboard)
+  * [Filtering by the Map](#filtering-by-the-map)
+  * [Adding Other information](#adding-other-information)
 * [Sharing your Visualizations](#sharing-your-visualizations)
 
 ## Introduction
@@ -77,9 +81,9 @@ We will create a map that shows the violent crime rates by state through the yea
 ### Adding Filters
 16. We can apply filters to let people interact with our data. Let's create one for years. Drag the Year dimension to the Filters box(above Marks). Leave the defaults and click OK. ![Fig_12: Adding Year as a Filter](images/fig_12.png)
 17. Click Year and Show Filter to expose the filter for visitors to manipulate. 
-18. There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. ![Year filter continous options](images/fig_13.png)
-19. We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. ![Change to Discrete](images/fig_14.png). In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it. 
-20. Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. ![Discrete Filter Styles](images/fig_15.png)
+18. There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. ![Fig_13: Year filter continous options](images/fig_13.png)
+19. We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. ![Fig_14: Change to Discrete](images/fig_14.png). In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it. 
+20. Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. ![Fig_15: Discrete Filter Styles](images/fig_15.png)
 
 Now, we have a nice map that will allow others to view and interact with our data. Let's create some other visualizations. 
 
@@ -88,9 +92,9 @@ Now, we have a nice map that will allow others to view and interact with our dat
 
 ## Creating a Line Graph
 In the next steps, we will create a line graph to show violent crime rates through the years. 
-1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![New Worksheet Creation](images/fig_16.png)
+1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![Fig_16: New Worksheet Creation](images/fig_16.png)
 2. Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year. 
-3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Year and Violent Crimes in columns/rows](images/fig_17.png)
+3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Fig_17: Year and Violent Crimes in columns/rows](images/fig_17.png)
 4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
 ### Analytics With Tableau
 5. 
@@ -100,15 +104,28 @@ In the next steps, we will create a line graph to show violent crime rates throu
 ## Creating a Bar Chart
 1. Add a new sheet and name it Violent Crime Breakdown. 
 2. The FBI classifies aggreviated assult, murder, rape, and robbery as violent crimes. In this section, we will create a bar chart with the break down of these cateogories of crimes.  
-3. Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. ![Categories in Row](images/fig_18.png)
-4. Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. ![Measure Values Box](images/fig_19.png)
-5. For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. ![Swamp rows and columns button](images/fig_20.png)
+3. Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. ![Fig_18: Categories in Row](images/fig_18.png)
+4. Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. ![Fig_19: Measure Values Box](images/fig_19.png)
+5. For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. ![Fig_20: Swamp rows and columns button](images/fig_20.png)
 
 [Return to Top](#about)
 
 ## Creating an Interactive Dashboard
 Now we can create a dashboard to view all of our visualizations at once. 
-1. Click the New Dashboard button at the bottom of the screen. 
+1. Click the New Dashboard button at the bottom of the screen. It is to the right of the new worksheet button. ![Fig_21: New dashboard button](images/fig_21.png)
+2. Rename you dashboard, Violent Crimes in the USA.   
+### Adding Worksheets
+2. In your new Dashboard, you should see Size and Sheets in the left column. ![Fig_22: Size and Sheets](images/fig_22.png)Under size, you can change the size of your dashboard to optimize it to different displays. You have the option to use a range, fixed size, or have your visualization change automatically based on your display. For this example, we will choose automatic. Click the down arrow beside the size option and click Automatic. 
+3. To add worksheets to the dashboard, you need to drag the sheet name to the center of the screen, where you see the text, "Drop sheets here."
+4. Start by dragging the map. It will be default, take up the entire workspace and add the legend and filter to the right. 
+5. Now, drag Violent Crimes by Year to the Map. When you drag the sheet, you will notice that different parts of the screen become highlighted. This is showing you where the sheet will be placed. Drop the chart so it will take up the bottom half of the screen. Don't worrry about the style yet. We will fix that at the end. ![Fig_23: Adding Line Chart to Dashboard](images/fig_23.png)
+6. Let's add the final visualization to the map. Drag Violent Crime Breakdown so it appears in the bottom right corner of the dashboard. ![Fig_24: Adding Bar Graph to Dashboard](images/fig_24.png)
+### Styling the Dashboard
+7. Now that the data is add, we can make our dashboard more user-friendly by adding some styling. The map sheet needs more screen real estate than the other visualizations. Hoover over the bottom of the map sheet until you see a black arrow. Then, drag the map down until it is the size you want. 
+8. We can do a similar process to give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position. 
+9. We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. ![Fig_25: Adding the Title](images/fig_25.png) You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append "from 1960 to 2014" to the end of the title and center it. Click OK to apply the changes. 
+### Filtering by the Map
+### Adding Other information
 
 [Return to Top](#about)
 
