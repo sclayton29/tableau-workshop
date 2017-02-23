@@ -132,13 +132,16 @@ University of Oklahoma Libraries</p>
 <h2 id="creating-a-line-graph">Creating a Line Graph</h2>
 <p>In the next steps, we will create a line graph to show violent crime rates through the years.</p>
 <ol>
-  <li>Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. <img src="images/fig_16.png" alt="Fig_16: New Worksheet Creation" /></li>
-  <li>Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year.</li>
-  <li>This time we will drag Year to Columns and Violent Crime Rate to Rows. <img src="images/fig_17.png" alt="Fig_17: Year and Violent Crimes in columns/rows" /></li>
-  <li>Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
+  <li>Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. <img src="images/fig_16.png" alt="New Worksheet Creation" /></li>
+  <li>Rename the worksheet something meaningful. We will call our sheet <em>Violent Crimes by Year</em>.</li>
+  <li>This time we will drag Year to Columns and Violent Crime Rate to Rows. <img src="images/fig_17.png" alt="Year and Violent Crimes in columns/rows" /></li>
+  <li>Notice the rows defaults to SUM(Violent Crime Rates). To change this to an average click on SUM(Violent Crime Rates), hover over Measure and select Average.
     <h3 id="analytics-with-tableau">Analytics With Tableau</h3>
+    <p>Tableau allows you to perform basic statistical analysis. Let’s add a trend line to this graph.</p>
   </li>
-  <li></li>
+  <li>Right click on the view and select Trend Lines &gt; Show Trend Lines. You will now see a trend line representing a linear regression model based on our data.</li>
+  <li>To view the trend line model and information about its significance, right click on the view and select Trend Lines &gt; Describe Trend Model. This menu shows the model’s formula, p-value, ANOVA table, and R-Squared value.</li>
+  <li>Right click on the view and select Trend Lines &gt; Trend Lines Options. The Trend Line Options menu gives options for changing the model type, including or excluding factors, and adding confidence bands.</li>
 </ol>
 
 <p><a href="#about">Return to Top</a></p>
@@ -169,7 +172,7 @@ University of Oklahoma Libraries</p>
     <h3 id="styling-the-dashboard">Styling the Dashboard</h3>
   </li>
   <li>Now that the data is add, we can make our dashboard more user-friendly by adding some styling. The map sheet needs more screen real estate than the other visualizations. Hoover over the bottom of the map sheet until you see a black arrow. Then, drag the map down until it is the size you want.</li>
-  <li>We can do a similar process to give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position.</li>
+  <li>We can do a similar process orto give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position.</li>
   <li>We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. <img src="images/fig_25.png" alt="Fig_25: Adding the Title" /> You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append “from 1960 to 2014” to the end of the title and center it. Click OK to apply the changes.
     <h3 id="filtering-by-the-map">Filtering by the Map</h3>
     <h3 id="adding-other-information">Adding Other information</h3>

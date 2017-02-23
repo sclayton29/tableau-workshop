@@ -92,12 +92,15 @@ Now, we have a nice map that will allow others to view and interact with our dat
 
 ## Creating a Line Graph
 In the next steps, we will create a line graph to show violent crime rates through the years. 
-1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![Fig_16: New Worksheet Creation](images/fig_16.png)
-2. Rename the worksheet something meaningful. We will call our sheet to Violent Crimes by Year. 
-3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Fig_17: Year and Violent Crimes in columns/rows](images/fig_17.png)
-4. Notice the rows defaults to SUM(Violent Crime Rates). Change this to Average by Clicking AVG(Violent Crime Rate), scroll down to Measure and select average.
+1. Begin by creating a new sheet. Click the new worksheet button on the bottom of the screen. ![New Worksheet Creation](images/fig_16.png)
+2. Rename the worksheet something meaningful. We will call our sheet *Violent Crimes by Year*. 
+3. This time we will drag Year to Columns and Violent Crime Rate to Rows. ![Year and Violent Crimes in columns/rows](images/fig_17.png)
+4. Notice the rows defaults to SUM(Violent Crime Rates). To change this to an average click on SUM(Violent Crime Rates), hover over Measure and select Average.
 ### Analytics With Tableau
-5. 
+Tableau allows you to perform basic statistical analysis. Let's add a trend line to this graph. 
+5. Right click on the view and select Trend Lines > Show Trend Lines. You will now see a trend line representing a linear regression model based on our data.  
+6. To view the trend line model and information about its significance, right click on the view and select Trend Lines > Describe Trend Model. This menu shows the model's formula, p-value, ANOVA table, and R-Squared value.
+7. Right click on the view and select Trend Lines > Trend Lines Options. The Trend Line Options menu gives options for changing the model type, including or excluding factors, and adding confidence bands. 
 
 [Return to Top](#about)
 
@@ -122,7 +125,7 @@ Now we can create a dashboard to view all of our visualizations at once.
 6. Let's add the final visualization to the map. Drag Violent Crime Breakdown so it appears in the bottom right corner of the dashboard. ![Fig_24: Adding Bar Graph to Dashboard](images/fig_24.png)
 ### Styling the Dashboard
 7. Now that the data is add, we can make our dashboard more user-friendly by adding some styling. The map sheet needs more screen real estate than the other visualizations. Hoover over the bottom of the map sheet until you see a black arrow. Then, drag the map down until it is the size you want. 
-8. We can do a similar process to give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position. 
+8. We can do a similar process orto give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position. 
 9. We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. ![Fig_25: Adding the Title](images/fig_25.png) You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append "from 1960 to 2014" to the end of the title and center it. Click OK to apply the changes. 
 ### Filtering by the Map
 ### Adding Other information
