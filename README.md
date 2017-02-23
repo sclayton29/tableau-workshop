@@ -18,7 +18,7 @@ University of Oklahoma Libraries
 * [Creating an Interactive Dashboard](#creating-an-interactive-dashboard)
   * [Adding Worksheets](#adding-worksheets)
   * [Styling the Dashboard](#styling-the-dashboard)
-  * [Filtering by the Map](#filtering-by-the-map)
+  * [Filtering on the Dashboard](#filtering-on-the-dashboard)
   * [Adding Other information](#adding-other-information)
 * [Sharing your Visualizations](#sharing-your-visualizations)
 
@@ -126,8 +126,14 @@ Now we can create a dashboard to view all of our visualizations at once.
 ### Styling the Dashboard
 7. Now that the data is add, we can make our dashboard more user-friendly by adding some styling. The map sheet needs more screen real estate than the other visualizations. Hoover over the bottom of the map sheet until you see a black arrow. Then, drag the map down until it is the size you want. 
 8. We can do a similar process orto give the line chart more horizontial space. Hoover in between the line chart and bar graph until you see another black arrow. Drag until you have your desired position. 
-9. We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. ![Fig_25: Adding the Title](images/fig_25.png) You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append "from 1960 to 2014" to the end of the title and center it. Click OK to apply the changes. 
-### Filtering by the Map
+9. We can add a title to the map. In the bottom left corner, click the Show Dashboard Title box. ![Fig_25: Adding the Title](images/fig_25.png) You can double click the title to open a text box that will allow you to style the text and add any additional text you may like. For this example, we will append "from 1960 to 2014" to the end of the title and center it. Click OK to apply the changes. ![Fig_26: Edited title](images/fig_26.png)
+10. The year filter and map legend are taking up a lot of space. We can fix this by changing these boxes to floating elements. Click down arrow on the year box. Select Floating. ![Fig_27: Floating Element](images/fig_27.png) Open the year menu again (with the down arrow) under float order, select bring to front. Repeat for the legend. Notice after both the legend and year have been made floating, the map and charts expand to fill the space. Place the year filter and legend where you want them. 
+11. Let's remove the Map title to free up even more space. Open the menu for the map (using the down arrow at the upper right corner of the map). Click on Title to remove the title from the dashboard. ![Fig_28: Removing Title from Map](images/fig_28.png)
+### Filtering on the Dashboard
+12. In order to make our dashboard more interactive, we can filter other data based on what the user has selected on the map. Go back to the menu for the map and select use as filter. ![Fig_29: Use as Filter](images/fig_29.png)Now, when you select a state on map the other visualizations adjust to just include that state's data. You can also select multiple states by using the Command key(Macs) or Control key (Windows).
+13. We also want to expand our year filter to apply to the map and the bar graph. To do this, click the down arrow on the year box. Select Apply to Worksheets and choose Selected Worksheets. ![Fig_30: Apply Filter to Selected Worksheets](images/fig_30.png)
+14. In the pop-up window that appears, check Violent Crime Breakdown or whatever you have named your bar graph. Click OK. 
+15. Test your filters to make sure that they are functioning as expected. 
 ### Adding Other information
 
 [Return to Top](#about)
