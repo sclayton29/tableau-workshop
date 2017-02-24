@@ -92,7 +92,7 @@ We will create a map that shows the violent crime rates by state through the yea
 ### Adding Filters
 16. We can apply filters to let people interact with our data. Let's create one for years. Drag the Year dimension to the Filters box(above Marks). Leave the defaults and click OK. ![Fig_12: Adding Year as a Filter](images/fig_12.png)
 17. Click Year and Show Filter to expose the filter for visitors to manipulate. 
-18. There are several differnt options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. ![Fig_13: Year filter continous options](images/fig_13.png)
+18. There are several different options for your filter. By default, you should see a slider. This is nice for a range of dates, but makes it difficult to select a single year. If you click the exposed year filter (on the right side of the screen), you should see three options to display your filter: Range of Values, At least, and At most. These are the options for a continous data type. ![Fig_13: Year filter continous options](images/fig_13.png)
 19. We can change the data type to discrete to see more options. Go back to the filter box on the left side of the screen. Click year and select Discrete. ![Fig_14: Change to Discrete](images/fig_14.png) In the pop-up window that appears, select All and click OK. You will need to select Show Filter again to expose it. 
 20. Go to the exposed filter (on the right). Select whichever style you prefer. For this example, we are going to use the Wildcard Match style. ![Fig_15: Discrete Filter Styles](images/fig_15.png)
 
@@ -155,12 +155,19 @@ Now we can create a dashboard to view all of our visualizations at once.
 ### Filtering on the Dashboard
 12. In order to make our dashboard more interactive, we can filter other data based on what the user has selected on the map. Go back to the menu for the map and select use as filter. ![Fig_29: Use as Filter](images/fig_29.png)Now, when you select a state on map the other visualizations adjust to just include that state's data. You can also select multiple states by using the Command key(Macs) or Control key (Windows).
 13. We also want to expand our year filter to apply to the map and the bar graph. To do this, click the down arrow on the year box. Select Apply to Worksheets and choose Selected Worksheets. ![Fig_30: Apply Filter to Selected Worksheets](images/fig_30.png)
-14. In the pop-up window that appears, check Violent Crime Breakdown or whatever you have named your bar graph. Click OK. 
+14. In the pop-up window that appears, check Violent Crime Breakdown or whatever you have named your bar graph. Click OK.
 15. Test your filters to make sure that they are functioning as expected. 
 
 [Return to Top](#about)
 
 ### Adding Other information
+
+16. You can add supplementary information to you dashboard to give context or make it more useable. On the bottom left, you should see a section titled objects with a variety of options. ![Fig_31: Objects section](images/fig_31.png) We are going to insert some text boxes for additional information. Let's start with adding information about our data source. 
+17. Double click Text under the Objects section. In the box that appears enter information about the data source. In this example, we will enter "Data from the Uniform Crime Report, U.S. Department of Justice, FBI. Data Notes: https://oudsl.github.io/tableau-workshop/data/data-notes.html" Click OK to save the Text box. 
+18. The text will automatically appear in the top left corner. Use the menu (click the down arrown at the top of the box) to make the text box floating, select the floating order bring to front, and reposition it. 
+19. We also want to add some instructions for using the year search box. Let's hide the year label to give us more space. Click the menu on the year box and select show Title. 
+20. Now, add an addition text for instructions. Double click on text under Objects in the bottom left corner. Enter your instructions. Make the box floating and bring to front. Then, position it where you would like. 
+21. You may also want to add an addition box to give yourself credit as the creator of this visualization. 
 
 [Return to Top](#about)
 
