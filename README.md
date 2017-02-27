@@ -172,5 +172,15 @@ Now we can create a dashboard to view all of our visualizations at once.
 [Return to Top](#about)
 
 ## Sharing Your Visualizations
+1. We are going to walk through how to share your visualizations through Tableau Public. If you are using Tableau Desktop (this is what you have if you are using the academic trial), you will have more options.
+2. In the top left of your window, select the save icon (floppy disk) ![Save icon](images/fig_33.png)
+3. In the pop up window that appears, enter your Tableau user name and password. If you do no have account, go ahead and click the link to create one. 
+4. After you have entered your credentials, your visualization will save. You may get a message letting you know it is being uploaded to the Tableau Public Server. 
+5. Once it is saved, a new tab will open in your browser. Now, you can configure what people can access. 
+6. Click edit details in the top right of the visualization open in your browser window. ![Edit Details](images/fig_34.png)
+7. You can update your title, a permalink to your website where you plan on embedding your visualization, and add a more robust description. 
+8. Under toolbar settings, you can control what appears on the viewer's toolbar. Note: you can give access to the data if you want that to be available. For our example, we will make the data available. 
+9. Under other settings, you can choose to show workbook sheets as tabs. If you deselect this options, viewers will see whatever what displayed when you saved to Tableau public. For this example, we will deselect this option so our viewers will only see the dashboard. ![Editting Details on Tableau Public](images/fig_35.png) Click Save to apply your changes. 
+10. Tableau Public makes it easy to share your visualization on social media or embed it into a web site. Beneath your visualization on the right side, you should see a Share buttom. Click that will get you an embed code, a link, and options to email, tweet or facebook your visualization. ![Sharing Viz](images/fig_36.png)
 
 [Return to Top](#about)
