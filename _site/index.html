@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=15f647b9ae943f05f01a0921270c04eff8102a3d">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6d3326c04d53f3f443b06bfc43dd801398fa49a0">
   </head>
   <body>
     <section class="page-header">
@@ -73,7 +73,7 @@ University of Oklahoma Libraries</p>
 <p>We also performed minor clean up for this data to be more easily useable.</p>
 
 <ol>
-  <li><a href="/data/CrimeStatebyState.zip?raw=true">Download the cleaned data</a></li>
+  <li><a href="/raw/master/data/CrimeStatebyState.zip">Download the cleaned data</a></li>
   <li>Unzip the data.</li>
   <li>Move the file to your desktop or another location where you can easily locate it.</li>
   <li>Look over the spreadsheet to gain a better understanding of what you will be visualizing.</li>
@@ -174,6 +174,8 @@ University of Oklahoma Libraries</p>
   <li>Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. <img src="images/fig_18.png" alt="Fig_18: Categories in Row" /></li>
   <li>Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. <img src="images/fig_19.png" alt="Fig_19: Measure Values Box" /></li>
   <li>For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. <img src="images/fig_20.png" alt="Fig_20: Swamp rows and columns button" /></li>
+  <li>Notice there’s something askew about the rape measure values. First, we have two different statistics for the total number of rapes committed in all states for all years of our dataset. Second, the “revised rape” measure value is so small as to be negligible on the scale of this bar graph. We don’t want to visually (or in any way) minimize rape as a phenomenon. When we investigate these discrepancies, we learn that the FBI began using <a href="https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/violent-crime/rape">a new definition of rape in 2013</a>. So, the two different measure values aren’t depicting different crimes, but a change in definition of a crime, so we need to aggregate those two values to give a realistic portrait of violent sexual assault in the United States in proportion to measures of other violent crimes.</li>
+  <li>To do this, click the dropdown menu in the upper right hand corner of the “Measure Values” card. Click the first option, “New Calculation.” <img src="images/TableauBarchartImg01.png" alt="Add Calculation to Measure Values" /> We want to aggregate the sums of the two definitions of rape. This is as simple as adding “+” between “SUM(item_1)” and “SUM(item_2)”. Tableau accepts the addition operator, but will not accept SUMs of SUMs. When you enter this calculation, Tableau will change the addition operator to an aggregation “AGG()”, though this is not a selectable parameter in advance.</li>
 </ol>
 
 <p><a href="#about">Return to Top</a></p>

@@ -40,7 +40,7 @@ We are going to be mapping Crime Data in the US from 1960 to 2014. This data com
 
 We also performed minor clean up for this data to be more easily useable.
 
-1. [Download the cleaned data](/data/CrimeStatebyState.zip?raw=true)
+1. [Download the cleaned data](/raw/master/data/CrimeStatebyState.zip)
 2. Unzip the data.
 3. Move the file to your desktop or another location where you can easily locate it.
 4. Look over the spreadsheet to gain a better understanding of what you will be visualizing.
@@ -124,6 +124,8 @@ Tableau allows you to perform basic statistical analysis. Let's add a trend line
 3. Drag these cateogories in the rows box. As you add each cateogory, they will be shown as different charts. ![Fig_18: Categories in Row](images/fig_18.png)
 4. Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. ![Fig_19: Measure Values Box](images/fig_19.png)
 5. For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. ![Fig_20: Swamp rows and columns button](images/fig_20.png)
+6. Notice there's something askew about the rape measure values. First, we have two different statistics for the total number of rapes committed in all states for all years of our dataset. Second, the "revised rape" measure value is so small as to be negligible on the scale of this bar graph. We don't want to visually (or in any way) minimize rape as a phenomenon. When we investigate these discrepancies, we learn that the FBI began using [a new definition of rape in 2013](https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/violent-crime/rape). So, the two different measure values aren't depicting different crimes, but a change in definition of a crime, so we need to aggregate those two values to give a realistic portrait of violent sexual assault in the United States in proportion to measures of other violent crimes. 
+7. To do this, click the dropdown menu in the upper right hand corner of the "Measure Values" card. Click the first option, "New Calculation." ![Add Calculation to Measure Values](images/TableauBarchartImg01.png) We want to aggregate the sums of the two definitions of rape. This is as simple as adding "+" between "SUM(item_1)" and "SUM(item_2)". Tableau accepts the addition operator, but will not accept SUMs of SUMs. When you enter this calculation, Tableau will change the addition operator to an aggregation "AGG()", though this is not a selectable parameter in advance.
 
 [Return to Top](#about)
 
