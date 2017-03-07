@@ -40,8 +40,7 @@ We are going to be mapping Crime Data in the US from 1960 to 2014. This data com
 
 We also performed minor clean up for this data to be more easily useable.
 
-1. [Download the cleaned data](/raw/master/data/CrimeStatebyState.zip)
-=======
+1. [Download the cleaned data](https://github.com/sclayton29/tableau-workshop/raw/master/data/CrimeStatebyState.zip)
 2. Unzip the data.
 3. Move the file to your desktop or another location where you can easily locate it.
 4. Look over the spreadsheet to gain a better understanding of what you will be visualizing.
